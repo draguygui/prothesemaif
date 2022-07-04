@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="title">Prothèse endommagée</div>
+
+
+    <form action="">
+<section class="top"> 
+        <div class="left">    
+            <div class="logo-type-tooth">
+            <img class="logos tooth" src="img/dent.png" style="filter: invert(21%) sepia(91%) saturate(5035%) hue-rotate(348deg) brightness(105%) contrast(116%);" alt="">
+            <p class="type">DENTAIRE</p>
+            </div> 
+           
+            <div class="tooth-choices">
+            <!-- LABEL RENVOIE à l'INPUT via l'id -->
+                <div class="fixechoice">
+                <input class="cl" name="choix" type="radio" value="fixe" id="fixeid">
+                 <label for="fixeid"><div></div></label>
+                <p>Fixe</p>
+                </div>
+
+                <div class="amovchoice">
+                 <input class="cl" name="choix" type="radio" value="amov" id="amovid">
+                 <label for="amovid"><div></div></label>
+                 <p>Amovible</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="right">
+            <div class="logo-type-ear">
+            <img class="logos ear" src="img/oreille.png" style="filter: invert(21%) sepia(91%) saturate(5035%) hue-rotate(348deg) brightness(105%) contrast(116%);" alt="">
+            <p class="type">AUDITIVE</p>
+            </div>
+
+            <input class="cl" id="audiid" name="choix" type="radio" value="audi">
+             <label for="audiid"><div></div></label>
+             <p class="ear-type">Implant ou Externe</p>
+        </div>
+    </section>
+
+<!--<input type="text" id="results" size="50">-->
+
+    </form>
+
+    <!-- DEBUT DE DEUXIEME PARTIE -->
+<section class="middle">
+   <div class="ageContainer"> Ancienneté :
+        <input type="number" class="age"> ans
+    </div>
+
+<div class="devisContainer">
+    Devis validé: <input type="number" class="devis"> €
+</div>
+
+<input id="btn" type="button" onclick="myFunction()" value="Calculer">
+
+<div class="resultContainer">
+<div class="tauxResultContainer">Taux maximimum d'intervention : <span class="tauxResult"></span> % </div>
+
+<div class="pecContainer">Soit une prise en charge de : <span class="pec"></span>€</div>
+</div>
+
+</section>
+
+<!-- RAPPELES -->
+<section class="rappels">
+    Rappels: </br></br>
+    - Si le solde restant à charge de l'assuré est supérieur à cette limite d'indemnisation, l'assuré conserve la différence à sa charge.</br></br>
+    -  Si le solde restant à la charge de l'assuré est inférieur à cette limite, le remboursement sera égal au montant de ce solde. 
+</section>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
